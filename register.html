@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .register-container {
+            width: 350px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .register-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .register-container input[type="text"],
+        .register-container input[type="email"],
+        .register-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .register-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #656865;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .register-container input[type="submit"]:hover {
+            background-color: #656865;
+        }
+
+        .register-container p {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .register-container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="indexlogin.html" method="post">
+            <input type="text" placeholder="Nama Lengkap" name="fullname" required>
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="password" placeholder="Konfirmasi Password" name="confirm_password" required>
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+
+</body>
+</html>
